@@ -2,6 +2,12 @@
 
 Setup your computer environment into a recording mode
 
+## Install
+
+```
+npm i recording -g
+```
+
 ## Command Line Prompts
 
 ```

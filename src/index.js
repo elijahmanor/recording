@@ -62,12 +62,13 @@ if ( commander.dock || commander.menu || commander.notifications || commander.sc
 		console.log( "all done" ); // eslint-disable-line
 	} );
 } else {
-	const [ state ] = commander.args;
+	let [ state ] = commander.args;
 	const list = questions.filter( question => {
 		return !state || ( state && question.name !== "state" );
 	} );
 	inquirer.prompt( list ).then( answers => {
-		const { state, tasks } = answers;
+		const { tasks } = answers;
+		state = state || answers.state;
 		when.all( getScripts( { state, tasks } ) ).then( () => {
 			console.log( "all done" ); // eslint-disable-line
 		} );
