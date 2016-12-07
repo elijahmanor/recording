@@ -1,0 +1,44 @@
+{
+  "name": "recording",
+  "version": "0.1.0",
+  "description": "Setup your computer environment into a recording mode",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "recording": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elijahmanor/recording.git"
+  },
+  "keywords": [
+    "computer",
+    "environment",
+    "resolution"
+  ],
+  "author": "Elijah Manor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elijahmanor/recording/issues"
+  },
+  "homepage": "https://github.com/elijahmanor/recording#readme",
+  "dependencies": {
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-2": "^6.18.0",
+    "babel-register": "^6.18.0",
+    "commander": "^2.9.0",
+    "inquirer": "^1.2.3",
+    "lodash": "^4.17.2",
+    "log-update": "^1.0.2",
+    "node-osascript": "^1.0.4",
+    "when": "^3.7.7"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "eslint": "^3.11.1",
+    "eslint-config-leankit": "^3.0.0",
+    "husky": "^0.11.9"
+  }
+}
