@@ -1,6 +1,6 @@
 {
   "name": "recording",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Setup your computer environment into a recording mode",
   "main": "index.js",
   "bin": {
